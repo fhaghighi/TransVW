@@ -8,7 +8,7 @@
 Specifically, once the self-discovered anatomical visual words set is built, we jointly train the classification and restoration branches together in the model.
 
 \
-![Image of framework](https://github.com/fhaghighi/SemanticGenesis/blob/master/images/framework.png)
+![Image of framework](https://github.com/fhaghighi/TransVW/blob/master/images/framework.png)
 
 
 ## Paper
