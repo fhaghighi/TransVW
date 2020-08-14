@@ -1,9 +1,11 @@
 # Transferable Visual Words
 
-we conceive a new idea that the sophisticated, recurrent patterns in medical images are _*anatomical visual words*_, which can be automatically discovered from unlabeled medical image data, serving as strong yet free supervision signals for deep convolutional neural networks (DCNN) to learn disentangled representations, via self-supervised learning.
-we train deep models to learn semantically enriched visual representation by self-discovery, self-classification, and self-restoration of the anatomical _*visual words*_, resulting in semantics-enriched, general-purpose, pre-trained 3D models, which we call <b>TransVW (transferable visual words)</b> for their transferable and generalizable capabilities to target tasks.
-We envision that TransVW can be considered as an add-on, which can be added to and boost existing self-supervised learning methods; and more importantly, TransVW is an annotation-efficient solution to medical image analysis since it achieves superior performance, accelerates the convergence speed, and reduces the annotation efforts against all its 3D counterparts by a large margin.
-\
+We conceive a new idea that the sophisticated, recurrent patterns in medical images are _<b>anatomical visual words</b>_, which can be automatically discovered from unlabeled medical image data, serving as strong yet free supervision signals for deep convolutional neural networks (DCNN) to learn disentangled representations, via self-supervised learning.
+
+We train deep models to learn semantically enriched visual representation by self-discovery, self-classification, and self-restoration of the anatomical _<b>visual words</b>_, resulting in semantics-enriched, general-purpose, pre-trained 3D models, which we call <b>TransVW (transferable visual words)</b> for their transferable and generalizable capabilities to target tasks.
+
+We envision that <b>TransVW</b> provides more generic and transferable representations, and it can serve as a primary source of transfer learning for 3D medical imaging applications to boost the performance and accelerate the training. 
+
 ![Image of framework](https://github.com/fhaghighi/TransVW/blob/master/images/framework.png)
 
 
