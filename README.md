@@ -1,7 +1,7 @@
 # Transferable Visual Words
 
-we conceive a new idea that the sophisticated, recurrent patterns in medical images are <b>anatomical visual words</b>, which can be automatically discovered from unlabeled medical image data, serving as strong yet free supervision signals for deep convolutional neural networks (DCNN) to learn disentangled representations, which are not biased to idiosyncrasies of the pre-training task and/or dataset, via self-supervised learning.
-we train deep models to learn semantically enriched visual representation by self-discovery, self-classification, and self-restoration of the anatomical {\em visual words}, resulting in semantics-enriched, general-purpose, pre-trained 3D models, which we call TransVW (transferable visual words) for their transferable and generalizable capabilities to target tasks.
+we conceive a new idea that the sophisticated, recurrent patterns in medical images are _anatomical visual words_, which can be automatically discovered from unlabeled medical image data, serving as strong yet free supervision signals for deep convolutional neural networks (DCNN) to learn disentangled representations, via self-supervised learning.
+we train deep models to learn semantically enriched visual representation by self-discovery, self-classification, and self-restoration of the anatomical _visual words_, resulting in semantics-enriched, general-purpose, pre-trained 3D models, which we call <b>TransVW (transferable visual words)</b> for their transferable and generalizable capabilities to target tasks.
 
 We envision that TransVW can be considered as an add-on, which can be added to and boost existing self-supervised learning methods; and more importantly, TransVW is an annotation-efficient solution to medical image analysis since it achieves superior performance, accelerates the convergence speed, and reduces the annotation efforts against all its 3D counterparts by a large margin.
 \
