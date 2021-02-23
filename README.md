@@ -1,24 +1,47 @@
-# Transferable Visual Words
+# Transferable Visual Words:  Exploiting the Semantics of Anatomical Patterns for Self-supervised Learning 
 
-We conceive a new idea that the sophisticated, recurrent patterns in medical images are _<b>anatomical visual words</b>_, which can be automatically discovered from unlabeled medical image data, serving as strong yet free supervision signals for deep convolutional neural networks (DCNN) to learn disentangled representations, via self-supervised learning.
+This paper introduces a new concept called _<b>transferable visual words (TransVW)</b>_, aiming to achieve annotation efficiency for deep learning in medical image analysis. Medical imaging&mdash;focusing on particular parts of the body for defined clinical purposes&mdash;generates images of great similarity in anatomy across patients and yields sophisticated anatomical patterns across images, which are associated with rich *semantics* about human anatomy and which are natural  *visual words*. We show that these visual words can be automatically harvested according to anatomical consistency via self-discovery, and that the self-discovered visual words can serve as strong yet free supervision signals for deep models to learn semantics-enriched generic image representation via self-supervision (self-classification and self-restoration). 
+Our extensive experiments demonstrate the annotation efficiency of TransVW by offering higher performance and faster convergence with reduced annotation cost in several applications. 
+Our TransVW has several important advantages, including (1) TransVW is a fully autodidactic scheme, which exploits the semantics of visual words for self-supervised learning, requiring no expert annotation; (2) visual word learning is an add-on strategy, which complements existing self-supervised methods, boosting their performance; and (3) the learned image representation is semantics-enriched models, which have proven to be more robust and generalizable, saving annotation efforts for a variety of applications through transfer learning.
 
-We train deep models to learn semantically enriched visual representation by self-discovery, self-classification, and self-restoration of the anatomical _<b>visual words</b>_, resulting in semantics-enriched, general-purpose, pre-trained 3D models, which we call <b>TransVW (transferable visual words)</b> for their transferable and generalizable capabilities to target tasks.
-
-We envision that <b>TransVW</b> provides more generic and transferable representations, and it can serve as a primary source of transfer learning for 3D medical imaging applications to boost the performance and accelerate the training. 
-
-![Image of framework](https://github.com/fhaghighi/TransVW/blob/master/images/framework.png)
+![Image of framework](images/framework.png)
 
 
 ## Paper
-<b>Transferable Visual Words</b> <br/>
+<b>Transferable Visual Words: Exploiting the Semantics of Anatomical Patterns for Self-supervised Learning </b> <br/>
 
 [Fatemeh Haghighi](https://github.com/fhaghighi)<sup>1</sup>, [Mohammad Reza Hosseinzadeh Taher](https://github.com/MR-HosseinzadehTaher)<sup>1</sup>,[Zongwei Zhou](https://github.com/MrGiovanni)<sup>1</sup>,[Michael B. Gotway](https://www.mayoclinic.org/biographies/gotway-michael-b-m-d/bio-20055566)<sup>2</sup>, [Jianming Liang](https://chs.asu.edu/jianming-liang)<sup>1</sup><br/>
 Arizona State University<sup>1</sup>, </sup>Mayo Clinic, <sup>2</sup><br/>
-Submitted to  IEEE Transactions on Medical Imaging (TMI) for Special Issue on Annotation-Efficient Deep Learning for Medical Imaging 2020
+IEEE Transactions on Medical Imaging (TMI)
 
 ## Available implementation
-<a href="https://keras.io/" target="_blank">
-<img alt="Keras" src="https://github.com/fhaghighi/SemanticGenesis/blob/master/images/keras_logo.png" width="200" height="55"> </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://pytorch.org/" target="_blank"><img alt="Keras" src="https://github.com/fhaghighi/SemanticGenesis/blob/master/images/pytorch_logo.png" width="200" height="48"></a>  
+[<img src="images/keras_logo.png" width="200" height="55">](keras/)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[<img src="images/pytorch_logo.png" width="200" height="48">](pytorch/)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+---------------------
+
+## Visual word learning is an add-on strategy, which boost existing self-supervised methods. 
+
+<p align="center"><img width="90%" src="images/add_on2.png" /></p>
+
+## TransVW offers superior transfer learning performance
+
+  
+<p align="center"><img width="100%" src="images/performance_result.png" /></p>
+    
+## TransVW accelerates the training process
+     
+<p align="center"><img width="100%" src="images/learning_curve.png" /></p>
+     
+     
+ ## TransVW reduces the annotation cost 
+     
+ <p align="center"><img width="100%" src="images/annotation_saving.png" /></p>
+    
+Credit to [superbar](https://github.com/scottclowe/superbar) by Scott Lowe for Matlab code of superbar.
 
 ## Citation
 If you use our source code and/or refer to the baseline results published in the paper, please cite our [paper](https://github.com/fhaghighi/SemanticGenesis) by using the following BibTex entry:
@@ -27,14 +50,15 @@ If you use our source code and/or refer to the baseline results published in the
   author="Haghighi, Fatemeh and Hosseinzadeh Taher, Mohammad Reza and Zhou, Zongwei and Gotway, Michael B. and Liang, Jianming",
   title="Transferable Visual Words",
   journal="",
-  year="2020",
+  year="2021",
   url=""
 }
 ```
 
 
 ## Acknowledgement
-This research has been supported partially by ASU and Mayo Clinic through a Seed Grant and an Innovation Grant, and partially by the National Institutes of Health (NIH) under Award Number R01HL128785. The content is solely the responsibility of the authors and does not necessarily represent the official views of the NIH. This work has utilized the GPUs provided partially by the ASU Research Computing and partially by the Extreme Science and Engineering Discovery Environment (XSEDE) funded by the National Science Foundation (NSF) under grant number ACI-1548562. This is a patent-pending technology.
+This research has been supported partially by ASU and Mayo Clinic through a Seed Grant and an Innovation Grant, and partially by the NIH under Award Number R01HL128785. The content is solely the responsibility of the authors and does not necessarily represent the official views of the NIH. This work has utilized the GPUs provided partially by the ASU Research Computing and partially by the Extreme Science and Engineering Discovery Environment (XSEDE) funded by the National Science Foundation (NSF) under grant number ACI-1548562. We thank [Zuwei Guo](https://www.linkedin.com/in/zuwei/) for implementing Rubik's cube, [M. M. Rahman Siddiquee](https://github.com/mahfuzmohammad) for examining NiftyNet, and [Jiaxuan Pang](https://www.linkedin.com/in/jiaxuan-pang-b014ab127/) for evaluating I3D, [Shivam Bajpai](https://github.com/sbajpai2) for helping in adopting TransVW to nnU-Net, and
+Shrikar Tatapudi for helping improve the writing of this paper. The content of this paper is covered by patents pending.
 
 ## License
 
