@@ -8,7 +8,7 @@ We provide the official <b>Keras</b> implementation of training TransVW from scr
 Arizona State University<sup>1</sup>, </sup>Mayo Clinic <sup>2</sup><br/>
 IEEE Transactions on Medical Imaging ([TMI](https://www.embs.org/tmi/)), 2021 <br/>
 
-[paper]() | [code](https://github.com/fhaghighi/test_transvw/) | talk ([YouTube]()) 
+
 
 ## Requirements
 
