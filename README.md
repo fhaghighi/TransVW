@@ -12,7 +12,9 @@ Our TransVW has several important advantages, including (1) TransVW is a fully a
 
 [Fatemeh Haghighi](https://github.com/fhaghighi)<sup>1</sup>, [Mohammad Reza Hosseinzadeh Taher](https://github.com/MR-HosseinzadehTaher)<sup>1</sup>,[Zongwei Zhou](https://github.com/MrGiovanni)<sup>1</sup>,[Michael B. Gotway](https://www.mayoclinic.org/biographies/gotway-michael-b-m-d/bio-20055566)<sup>2</sup>, [Jianming Liang](https://chs.asu.edu/jianming-liang)<sup>1</sup><br/>
 Arizona State University<sup>1</sup>, </sup>Mayo Clinic, <sup>2</sup><br/>
-IEEE Transactions on Medical Imaging (TMI)
+IEEE Transactions on Medical Imaging (TMI) <br/>
+[paper](https://arxiv.org/pdf/2102.10680.pdf) | [code](https://github.com/fhaghighi/TransVW)
+
 
 ## Available implementation
 [<img src="images/keras_logo.png" width="200" height="55">](keras/)
