@@ -165,9 +165,16 @@ python -W ignore keras/train.py
 Your pre-trained TransVW will be saved at `./keras/Checkpoints/TransVW_chest_ct.h5`.
 
 ## Citation
-If you use our source code and/or refer to the baseline results published in the paper, please cite our [paper]() by using the following BibTex entry:
+If you use our source code and/or refer to the baseline results published in the paper, please cite our [paper](https://arxiv.org/pdf/2102.10680.pdf) by using the following BibTex entry:
 ```
-@misc{
+
+@misc{haghighi2021transferable,
+      title={Transferable Visual Words: Exploiting the Semantics of Anatomical Patterns for Self-supervised Learning}, 
+      author={Fatemeh Haghighi and Mohammad Reza Hosseinzadeh Taher and Zongwei Zhou and Michael B. Gotway and Jianming Liang},
+      year={2021},
+      eprint={2102.10680},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }
 ```
 
