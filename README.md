@@ -46,13 +46,7 @@ Credit to [superbar](https://github.com/scottclowe/superbar) by Scott Lowe for M
 ## Citation
 If you use our source code and/or refer to the baseline results published in the paper, please cite our [paper](https://github.com/fhaghighi/SemanticGenesis) by using the following BibTex entry:
 ```
-@article{haghighi2020transvw,
-  author="Haghighi, Fatemeh and Hosseinzadeh Taher, Mohammad Reza and Zhou, Zongwei and Gotway, Michael B. and Liang, Jianming",
-  title="Transferable Visual Words",
-  journal="",
-  year="2021",
-  url=""
-}
+
 ```
 
 
