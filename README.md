@@ -44,9 +44,16 @@ IEEE Transactions on Medical Imaging (TMI)
 Credit to [superbar](https://github.com/scottclowe/superbar) by Scott Lowe for Matlab code of superbar.
 
 ## Citation
-If you use our source code and/or refer to the baseline results published in the paper, please cite our [paper](https://github.com/fhaghighi/SemanticGenesis) by using the following BibTex entry:
+If you use our source code and/or refer to the baseline results published in the paper, please cite our [paper](https://arxiv.org/abs/2102.10680) by using the following BibTex entry:
 ```
-
+@misc{haghighi2021transferable,
+      title={Transferable Visual Words: Exploiting the Semantics of Anatomical Patterns for Self-supervised Learning}, 
+      author={Fatemeh Haghighi and Mohammad Reza Hosseinzadeh Taher and Zongwei Zhou and Michael B. Gotway and Jianming Liang},
+      year={2021},
+      eprint={2102.10680},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
 
 
