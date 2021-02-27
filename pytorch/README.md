@@ -143,10 +143,6 @@ model = UNet3D()
 weight_dir = 'Checkpoints/en_de/TransVW_chest_ct.pt'
 checkpoint = torch.load(weight_dir)
 state_dict = checkpoint['state_dict']
-#Load pre-trained weights
-weight_dir = 'Checkpoints/en_de/TransVW_chest_ct.pt'
-checkpoint = torch.load(weight_dir)
-state_dict = checkpoint['state_dict']
 state_dict = {k.replace("module.", ""): v for k, v in state_dict.items()}
 delete = [key for key in state_dict if "projection_head" in key]
 for key in delete: del state_dict[key]
