@@ -40,7 +40,7 @@ Download the pre-trained TransVW as following and save into `./keras/Checkpoints
 <tr><td align="left">TransVW</td>
 <td align="center"><a href="https://github.com/ellisdg/3DUnetCNN">U-Net 3D</a></td>
 <td align="center">Keras</td>
-<td align="center"><a href="">download</a></td>
+<td align="center"><a href="https://zenodo.org/record/4625321/files/TransVW_chest_ct.h5?download=1">download</a></td>
 </tr>
 </tbody></table>
 
