@@ -37,6 +37,7 @@ from sklearn import metrics
 import random
 from sklearn.utils import shuffle
 from vnet3d import *
+from unet3d import *
 from keras.callbacks import LambdaCallback, TensorBoard, ReduceLROnPlateau
 from glob import glob
 from skimage.transform import resize
@@ -47,7 +48,7 @@ sys.setrecursionlimit(40000)
 
 parser = OptionParser()
 
-parser.add_option("--arch", dest="arch", help="Vnet", default="Vnet", type="string")
+parser.add_option("--arch", dest="arch", help="Vnet", default="Unet", type="string")
 parser.add_option("--decoder", dest="decoder_block_type", help="transpose | upsampling", default="upsampling",
                   type="string")
 parser.add_option("--input_rows", dest="input_rows", help="input rows", default=128, type=int)
@@ -177,6 +178,8 @@ config.display()
 
 if options.arch =="Vnet":
     model = vnet_model_3d((1, config.input_rows, config.input_cols, config.input_deps), batch_normalization=True)
+elif options.arch =="Unet":
+    model = unet_model_3d((1, config.input_rows, config.input_cols, config.input_deps), batch_normalization=True)
 
 
 if options.weights is not None:
