@@ -113,7 +113,7 @@ $ pip install -r requirements.txt
 ### 2. Preparing data
 
 #### For your convenience, we have provided our own self-discoverd 3D visual words from LUNA16 dataset as well as their pseudo labels.
-Download the data from [Google Drive](). We have provided the training and validation samples for C=50 classes of visual words. For each instance of a visual word, we have extracted 3 multi-resolution cubes from each patient, where each of the three resolutions are saved in files named as 'train_dataN_vwGen_ex_ref_fold1.0.npy',  *N*=1,2,3. For each 'train_dataN_vwGen_ex_ref_fold1.0.npy' file, there is a corresponding 'train_labelN_vwGen_ex_ref_fold1.0.npy' file, which contains the pseudo labels of the discovered visual words.  
+Download the data from [this repository](https://zenodo.org/record/4625321/files/TransVW_data.zip?download=1). We have provided the training and validation samples for C=50 classes of visual words. For each instance of a visual word, we have extracted 3 multi-resolution cubes from each patient, where each of the three resolutions are saved in files named as 'train_dataN_vwGen_ex_ref_fold1.0.npy',  *N*=1,2,3. For each 'train_dataN_vwGen_ex_ref_fold1.0.npy' file, there is a corresponding 'train_labelN_vwGen_ex_ref_fold1.0.npy' file, which contains the pseudo labels of the discovered visual words.  
 
 
 - The processed anatomical patterns directory structure
