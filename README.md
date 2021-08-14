@@ -46,13 +46,11 @@ Credit to [superbar](https://github.com/scottclowe/superbar) by Scott Lowe for M
 ## Citation
 If you use our source code and/or refer to the baseline results published in the paper, please cite our [paper](https://arxiv.org/abs/2102.10680) by using the following BibTex entry:
 ```
-@misc{haghighi2021transferable,
+@article{haghighi2021transferable,
       title={Transferable Visual Words: Exploiting the Semantics of Anatomical Patterns for Self-supervised Learning}, 
-      author={Fatemeh Haghighi and Mohammad Reza Hosseinzadeh Taher and Zongwei Zhou and Michael B. Gotway and Jianming Liang},
+      author={Haghighi, Fatemeh and Hosseinzadeh Taher, Mohammad Reza and Zhou, Zongwei and Gotway, Michael B. and Liang, Jianming},
       year={2021},
-      eprint={2102.10680},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+   journal={arXiv preprint arXiv:2102.10680},
 }
 ```
 
