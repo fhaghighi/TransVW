@@ -2,7 +2,7 @@
 
 We have introduced a new concept called _<b>transferable visual words (TransVW)</b>_, where the sophisticated, consistent, and recurring anatomical patterns across medical images are natural *visual words*. These visual words, associated with rich *semantics* about the human anatomy, can be automatically extracted from unlabeled medical images and serve as strong yet free supervision signals for CNNs to learn generic semantics-enriched representation via self-supervision. TransVW is a fully autodidactic scheme (requiring no manual labeling), serves as an add-on strategy (boosting existing self-supervised methods), and yields semantics-enriched pre-trained models (saving annotation efforts for a variety of 3D medical applications through transfer learning). 
 
-![Image of framework](images/framework.png)
+![Image of framework](images/transvw_summary.png)
 
 
 ## Paper
